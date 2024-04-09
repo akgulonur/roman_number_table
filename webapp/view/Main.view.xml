@@ -1,0 +1,23 @@
+<mvc:View controllerName="com.demo.romanconverter.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <IconTabBar id="idIconTabBar" select="selectIconTab" class="sapUiResponsivePadding--header sapUiResponsivePadding--content">
+                <items>
+                    <IconTabFilter design="Horizontal" icon="sap-icon://travel-expense" iconColor="Positive" text="Exercise A" key="a">
+                        <content>
+                            <core:Fragment fragmentName="com.demo.romanconverter.view.iconTabFragments.ExerciseA" type="XML" />
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter design="Horizontal" icon="sap-icon://monitor-payments" iconColor="Critical" text="Exercise B" key="b">
+                        <content>
+                            <core:Fragment fragmentName="com.demo.romanconverter.view.iconTabFragments.ExerciseB" type="XML" />
+                        </content>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>

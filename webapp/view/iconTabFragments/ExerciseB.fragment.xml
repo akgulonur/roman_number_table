@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <VBox class="sapUiSmallMargin">
+        <f:Form>
+            <f:title>
+                <core:Title text="Enter values" />
+            </f:title>
+            <f:layout>
+                <f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" />
+            </f:layout>
+            <f:formContainers>
+                <f:FormContainer>
+                    <f:formElements>
+                        <f:FormElement label="Columns">
+                            <f:fields>
+                                <Input placeholder="Enter total columns number" value="{main>/columnNumber}"/>
+                            </f:fields>
+                        </f:FormElement>
+                        <f:FormElement label="Rows">
+                            <f:fields>
+                                <Input placeholder="Enter total rows number" value="{main>/rowNumber}"/>
+                            </f:fields>
+                        </f:FormElement>
+                    </f:formElements>
+                </f:FormContainer>
+            </f:formContainers>
+        </f:Form>
+        <Toolbar>
+            <ToolbarSpacer/>
+            <Button type="Accept" text="Draw Table" press="getInputValues" />
+        </Toolbar>
+
+    </VBox>
+    <Table id="dynamicTable" visible="false" growing="true">
+    </Table>
+</core:FragmentDefinition>

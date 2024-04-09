@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Table items="{main>/RomanNumberList}" id="firstTable">
+        <columns>
+            <Column width="12em">
+                <Text text="" />
+            </Column>
+            <Column width="12em">
+                <Text text="I" />
+            </Column>
+            <Column width="12em">
+                <Text text="II" />
+            </Column>
+            <Column width="12em">
+                <Text text="III" />
+            </Column>
+            <Column width="12em">
+                <Text text="IV" />
+            </Column>
+            <Column width="12em">
+                <Text text="V" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem vAlign="Middle">
+                <cells>
+                    <Text text="{main>value0}" />
+                    <Text text="{main>value1}" />
+                    <Text text="{main>value2}" />
+                    <Text text="{main>value3}" />
+                    <Text text="{main>value4}" />
+                    <Text text="{main>value5}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>
